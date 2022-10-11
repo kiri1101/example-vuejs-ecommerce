@@ -3,9 +3,9 @@ import { RouterLink, RouterView } from "vue-router";
 import HelloWorld from "./components/HelloWorld.vue";
 import IconUserProfile from "./components/icons/IconUserProfile.vue";
 import IconShoppingCart from "./components/icons/IconShoppingCart.vue";
-import IconMobileNavOpen from "./components/icons/IconMobileNavOpen.vue";
 import { useMobileMenuStore } from "./stores/MobileMenu.js";
 import IconMobileNavDefault from "./components/icons/IconMobileNavDefault.vue";
+import TheMobileMenu from "./components/partials/TheMobileMenu.vue";
 let menu = useMobileMenuStore();
 </script>
 
@@ -41,14 +41,18 @@ let menu = useMobileMenuStore();
         </div>
         <div class="flex cursor-pointer place-items-center">
           <span class="font-bold text-md sm:text-lg">$0.00</span>
+          <!-- Cart -->
           <IconShoppingCart />
+          <!-- End -->
           <div
             class="rounded-full w-[18px] h-5 bottom-2 flex place-items-center bg-gray-400"
           >
             <span class="text-lg font-bold text-white left-1">0</span>
           </div>
         </div>
+        <!-- Profile Icon -->
         <IconUserProfile />
+        <!-- End -->
 
         <Transition name="close">
           <div v-if="!menu.show">
@@ -67,72 +71,11 @@ let menu = useMobileMenuStore();
 
   <!-- Mobile Menu -->
   <Transition name="open">
-    <div
-      v-if="menu.show"
-      :class="{
-        'top-0 right-0 bottom-0 left-0 flex overflow-hidden bg-gray-800/90': true,
-        'invisible absolute': menu.show === false,
-        'visible absolute': menu.show === true,
-      }"
-    >
-      <div class="flex flex-col gap-10 w-full">
-        <button class="p-2 ml-2 mt-1 w-12 bg-gray-600 hover:bg-gray-500 h-12 rounded-md">
-          <IconMobileNavOpen />
-        </button>
-        <ul class="bg-white text-white">
-          <li class="text-2xl sm:text-3xl">
-            <RouterLink to="/">Everything</RouterLink>
-          </li>
-          <li class="text-lg">
-            <RouterLink to="/">Women</RouterLink>
-          </li>
-          <li class="text-lg">
-            <RouterLink to="/">Children</RouterLink>
-          </li>
-          <li class="text-lg">
-            <RouterLink to="/">Accessories</RouterLink>
-          </li>
-          <li class="text-lg">
-            <RouterLink to="/">About</RouterLink>
-          </li>
-          <li class="text-lg">
-            <RouterLink to="/">Contact</RouterLink>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <TheMobileMenu />
   </Transition>
 </template>
 
 <style scoped>
-ul {
-  display: grid;
-}
-
-li {
-  display: flex;
-  justify-content: center;
-  padding: 1rem;
-  border-bottom-width: 2px;
-  border-color: black;
-  background-color: rgb(7 89 133);
-  cursor: pointer;
-  width: 100vw;
-  font-size: 1.5rem;
-  line-height: 2rem;
-}
-
-li:hover {
-  background-color: rgb(2 132 199);
-}
-
-@media (min-width: 640px) {
-  li {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
-  }
-}
-
 .close-enter-active {
   transition: all 0.8s ease-out;
 }

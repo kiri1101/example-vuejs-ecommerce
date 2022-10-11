@@ -1,0 +1,266 @@
+export default {
+  slides: [
+    {
+      title: "Partner 1",
+      content: "Example 1 of company partner",
+      image: "/src/assets/img/client-logo-2.png",
+    },
+    {
+      title: "Partner 2",
+      content: "Example 2 of company partner",
+      image: "/src/assets/img/client-logo-3.png",
+    },
+    {
+      title: "Partner 3",
+      content: "Example 3 of company partner",
+      image: "/src/assets/img/client-logo-4.png",
+    },
+    {
+      title: "Partner 4",
+      content: "Example 4 of company partner",
+      image: "/src/assets/img/client-logo-5.png",
+    },
+  ],
+  items: [
+    {
+      id: 1,
+      title: "DNK Yellow Shoes",
+      category: "Men",
+      image: {
+        source: "/src/assets/img/sports-shoe3.jpg",
+        alt: "Shoe 1",
+      },
+      oldAmount: "$150.00",
+      quantity: 10,
+      sale: {
+        state: true,
+        amount: "$120.00",
+      },
+      shipping: {
+        isFree: true,
+        fee: "$0.00",
+      },
+      summary:
+        "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
+      description:
+        "Since it’s creation lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      reviews: [],
+    },
+    {
+      id: 2,
+      title: "DNK Blue Shoes",
+      category: "Men",
+      image: {
+        source: "/src/assets/img/sports-shoe1-300x300.jpg",
+        alt: "Shoe 2",
+      },
+      oldAmount: "$200.00",
+      quantity: 14,
+      sale: {
+        state: false,
+        amount: "$0.00",
+      },
+      shipping: {
+        isFree: false,
+        fee: "$10.00",
+      },
+      summary:
+        "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
+      description:
+        "Since it’s creation lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      reviews: [],
+    },
+    {
+      id: 3,
+      title: "DNK Brown Jeans",
+      category: "Men",
+      image: {
+        source: "/src/assets/img/product-m-jeans1-300x300.jpg",
+        alt: "Jeans 1",
+      },
+      oldAmount: "$150.00",
+      quantity: 4,
+      sale: {
+        state: false,
+        amount: "$0.00",
+      },
+      shipping: {
+        isFree: false,
+        fee: "$10.00",
+      },
+      summary:
+        "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
+      description:
+        "Since it’s creation lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      reviews: [],
+    },
+    {
+      id: 4,
+      title: "Blue Denim Jeans",
+      category: "Women",
+      image: {
+        source: "/src/assets/img/product-w-jeans2-300x300.jpg",
+        alt: "Jeans 2",
+      },
+      oldAmount: "$150.00",
+      quantity: 4,
+      sale: {
+        state: false,
+        amount: "$0.00",
+      },
+      shipping: {
+        isFree: false,
+        fee: "$10.00",
+      },
+      summary:
+        "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
+      description:
+        "Since it’s creation lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      reviews: [],
+    },
+    {
+      id: 5,
+      title: "Basic Gray Jeans",
+      category: "Women",
+      image: {
+        source: "/src/assets/img/product-w-jeans4-300x300.jpg",
+        alt: "Women Jeans 4",
+      },
+      oldAmount: "$150.00",
+      quantity: 9,
+      sale: {
+        state: false,
+        amount: "$0.00",
+      },
+      shipping: {
+        isFree: false,
+        fee: "$10.00",
+      },
+      summary:
+        "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
+      description:
+        "Since it’s creation lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      reviews: [],
+    },
+    {
+      id: 6,
+      title: "Blue Denim Shorts",
+      category: "Women",
+      image: {
+        source: "/src/assets/img/product-w-jeans1-300x300.jpg",
+        alt: "Women Jeans 1",
+      },
+      oldAmount: "$150.00",
+      quantity: 9,
+      sale: {
+        state: true,
+        amount: "$130.00",
+      },
+      shipping: {
+        isFree: false,
+        fee: "$10.00",
+      },
+      summary:
+        "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
+      description:
+        "Since it’s creation lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      reviews: [],
+    },
+    {
+      id: 7,
+      title: "Anchor Bracelet",
+      category: "Accessories",
+      image: {
+        source: "/src/assets/img/product-accessory2-300x300.jpg",
+        alt: "Accessory 1",
+      },
+      oldAmount: "$150.00",
+      quantity: 9,
+      sale: {
+        state: false,
+        amount: "$130.00",
+      },
+      shipping: {
+        isFree: false,
+        fee: "$10.00",
+      },
+      summary:
+        "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
+      description:
+        "Since it’s creation lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      reviews: [],
+    },
+    {
+      id: 8,
+      title: "Boho Bangle Bracelet",
+      category: "Accessories",
+      image: {
+        source: "/src/assets/img/product-accessory1-300x300.jpg",
+        alt: "Accessory 2",
+      },
+      oldAmount: "$170.00",
+      quantity: 12,
+      sale: {
+        state: false,
+        amount: "$130.00",
+      },
+      shipping: {
+        isFree: false,
+        fee: "$10.00",
+      },
+      summary:
+        "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
+      description:
+        "Since it’s creation lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      reviews: [],
+    },
+    {
+      id: 9,
+      title: "Light Brown Purse",
+      category: "Accessories",
+      image: {
+        source: "/src/assets/img/product-bag1-300x300.jpg",
+        alt: "Accessory 3",
+      },
+      oldAmount: "$150.00",
+      quantity: 11,
+      sale: {
+        state: false,
+        amount: "$130.00",
+      },
+      shipping: {
+        isFree: false,
+        fee: "$10.00",
+      },
+      summary:
+        "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
+      description:
+        "Since it’s creation lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      reviews: [],
+    },
+    {
+      id: 10,
+      title: "Bright Red Bag",
+      category: "Accessories",
+      image: {
+        source: "/src/assets/img/product-bag3-300x300.jpg",
+        alt: "Accessory 4",
+      },
+      oldAmount: "$140.00",
+      quantity: 8,
+      sale: {
+        state: false,
+        amount: "$130.00",
+      },
+      shipping: {
+        isFree: false,
+        fee: "$10.00",
+      },
+      summary:
+        "Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit sed.",
+      description:
+        "Since it’s creation lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+      reviews: [],
+    },
+  ],
+};

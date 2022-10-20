@@ -17,7 +17,7 @@ let menu = useMobileMenuStore();
     <div class="flex flex-col gap-10 w-full">
       <button
         type="button"
-        class="p-2 ml-2 mt-1 w-12 bg-gray-600 hover:bg-gray-500 h-12 rounded-md"
+        class="p-2 ml-6 mt-1 w-12 bg-gray-600 hover:bg-gray-500 h-12 rounded-md"
       >
         <IconMobileNavOpen />
       </button>

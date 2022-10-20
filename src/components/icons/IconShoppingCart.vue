@@ -1,7 +1,17 @@
+<script setup>
+defineProps({
+  classes: {
+    type: String,
+    required: true,
+  },
+});
+</script>
+
 <template>
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    class="w-8 h-8 fill-white"
+    class="w-8 h-8"
+    :class="classes"
     viewBox="0 0 1024 1024"
   >
     <path

@@ -7,7 +7,7 @@ let menu = useMobileMenuStore();
   <svg
     @click="menu.toggle()"
     xmlns="http://www.w3.org/2000/svg"
-    class="w-7 h-7 ml-2 fill-white menu cursor-pointer hover:scale-110 hover:shadow"
+    class="w-7 h-7 ml-2 fill-black menu cursor-pointer hover:scale-110 hover:shadow"
     viewBox="0 0 24 24"
   >
     <path fill="none" d="M0 0h24v24H0V0z" />

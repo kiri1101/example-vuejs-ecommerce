@@ -1,14 +1,34 @@
 <script setup>
-import { RouterLink } from "vue-router";
 import TheFooter from "../components/partials/TheFooter.vue";
 import TheServices from "../components/partials/TheServices.vue";
 import TheSpecialBanner from "../components/partials/TheSpecialBanner.vue";
 import ItemList from "../components/items/ItemList.vue";
 import TheCategory from "../components/partials/TheCategory.vue";
 import ThePartners from "../components/partials/ThePartners.vue";
+import HelloWorld from "../components/HelloWorld.vue";
+import TheNavbar from "../components/partials/TheNavbar.vue";
+import IconShoppingCart from "../components/icons/IconShoppingCart.vue";
+import IconUserProfile from "../components/icons/IconUserProfile.vue";
+import TheAdvert from "../components/partials/TheAdvert.vue";
 </script>
 
 <template>
+  <header class="relative overflow-hidden cover">
+    <TheNavbar classes="text-white bg-sky-800/60" numclass="text-white">
+      <template #shopCart>
+        <IconShoppingCart classes="fill-white" />
+      </template>
+
+      <template #userProfile>
+        <IconUserProfile color="#ffffff" />
+      </template>
+    </TheNavbar>
+
+    <div class="items-center h-screen header-content bg-sky-800/40">
+      <HelloWorld title="Raining Offers For Hot Summer!" msg="25% Off On All Products" />
+    </div>
+  </header>
+
   <main>
     <!-- Partners -->
     <ThePartners />
@@ -26,17 +46,31 @@ import ThePartners from "../components/partials/ThePartners.vue";
     <!-- Our Services -->
     <TheServices />
     <!-- End -->
-    <div class="border-y-2 border-gray-300">
-      <RouterLink to="/">
-        <h1
-          class="uppercase text-gray-800 font-semibold p-6 hover:text-sky-300 hover:underline text-2xl mx-16"
-        >
-          Sale up to 70% off for all clothes & fashion items, on all brands.
-        </h1>
-      </RouterLink>
-    </div>
+    <TheAdvert />
   </main>
   <!-- Footer -->
   <TheFooter />
   <!-- End -->
 </template>
+
+<style scoped>
+.cover {
+  background-image: url("@/assets/img/home-new-bg-free-img.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header-content {
+  display: grid;
+  /* grid-template-columns: 50% 50%; */
+}
+
+header {
+  min-height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>

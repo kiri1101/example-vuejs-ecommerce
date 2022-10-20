@@ -1,12 +1,20 @@
 <script setup>
 import IconStar from "../icons/IconStar.vue";
-import { reactive } from "vue";
-import container from "../../stores/container.js";
-const data = reactive(container);
+import { onMounted, reactive } from "vue";
+const store = reactive({
+  items: [],
+});
+
+onMounted(() => {
+  fetch("http://localhost:3000/items")
+    .then((response) => response.json())
+    .then((data) => (store.items = data))
+    .catch((err) => console.log(err.message));
+});
 </script>
 
 <template>
-  <li v-for="item in data.items" :key="item.id">
+  <li v-for="item in store.items" :key="item.id">
     <div class="w-52">
       <div v-if="item.sale.state">
         <div
@@ -15,16 +23,24 @@ const data = reactive(container);
           Sale!
         </div>
       </div>
-      <img :src="item.image.source" :alt="item.image.alt" class="static z-0 w-64 mb-3" />
-      <span class="mb-2 font-medium">{{ item.title }}</span
-      ><br />
+      <RouterLink :to="{ name: 'itemDetails', params: { id: item.id } }">
+        <img
+          :src="item.image.source"
+          :alt="item.image.alt"
+          class="static z-0 w-64 mb-3"
+        />
+      </RouterLink>
+      <RouterLink :to="{ name: 'itemDetails', params: { id: item.id } }">
+        <span class="mb-2 font-medium">{{ item.title }}</span>
+      </RouterLink>
+      <br />
       <span class="mb-2 font-medium">{{ item.category }}</span
       ><br />
       <div v-if="item.sale.state">
-        <span class="font-medium text-gray-500 line-through">{{ item.oldAmount }}</span>
-        <span class="ml-2 font-medium">{{ item.sale.amount }}</span>
+        <span class="font-medium text-gray-500 line-through">${{ item.oldAmount }}</span>
+        <span class="ml-2 font-medium">${{ item.sale.amount }}</span>
       </div>
-      <span v-else class="font-medium">{{ item.oldAmount }}</span>
+      <span v-else class="font-medium">${{ item.oldAmount }}</span>
       <!-- Review Stars -->
       <IconStar />
     </div>

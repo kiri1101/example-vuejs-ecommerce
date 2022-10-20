@@ -104,7 +104,7 @@ onMounted(() => {
           </div>
         </div>
       </div>
-      <div class="bg-fuchsia-400 h-96 mx-4 mt-12">
+      <!-- <div class="bg-fuchsia-400 h-96 mx-4 mt-12">
         <nav>
           <ul class="flex gap-2 mx-2">
             <li class="border-t-4 border-gray-900">Description</li>
@@ -112,7 +112,7 @@ onMounted(() => {
             <li class="border-t-4 border-gray-900">Reviews (0)</li>
           </ul>
         </nav>
-      </div>
+      </div> -->
     </div>
     <TheAdvert adclass="bg-white" />
   </main>
